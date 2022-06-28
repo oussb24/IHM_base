@@ -486,7 +486,7 @@ class Ui_Widget(object):
             # urn = "java -jar leshan-client-demo.jar "+ "-n "+ "urn:lo:lwm2m:"+ self.connectClient_inputEndPointName.text() +" -i "+ self.connectClient_inputEndPointName.text()+" -p 1d576207727841a7b9aa2a1f24448f86 -u lwm2m.integ.m2m.orange.com"
             # urn = urn.strip('"')
             #p = subprocess.Popen(["java","-jar","leshan-client-demo.jar","-n","urn:lo:lwm2m:"+self.connectClient_inputEndPointName.text(),"-i",self.connectClient_inputEndPointName.text(),"-p","1d576207727841a7b9aa2a1f24448f86","-u","lwm2m.integ.m2m.orange.com"], stdin=subprocess.PIPE,stderr=subprocess.PIPE)
-            p = subprocess.Popen("java -jar leshan-client-demo.jar "+ "-n "+ "urn:lo:lwm2m:"+ self.connectClient_inputEndPointName.text() +" -i "+ self.connectClient_inputEndPointName.text()+" -p 1d576207727841a7b9aa2a1f24448f86 -u lwm2m.integ.m2m.orange.com",shell =True)
+            p = subprocess.Popen("java -jar leshan-client-demo.jar "+ "-n "+ "urn:lo:lwm2m:"+ self.connectClient_inputEndPointName.text() +" -i "+ self.connectClient_inputEndPointName.text()+" -p 1d576207727841a7b9aa2a1f24448f86 -u lwm2m.integ.m2m.orange.com",stdin=subprocess.PIPE,shell=True)
 
         else:
             print("p has already been changed")
